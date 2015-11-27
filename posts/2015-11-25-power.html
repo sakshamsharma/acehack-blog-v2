@@ -60,10 +60,6 @@
   </p>
   <p>The issue of Graphic cards and Battery Life has been a sticky one for me, and I believe most other laptop users too. The battery backup under Linux is simply awful. For instance, I can get ~5 hours on my Laptop using Windows. Linux lands me at max 1.5-2 hours under similar usage. I believe most Linux users would have similar experiences.</p>
 <p>Here’s some of the things I did which have helped increase the battery backup by a large amount in my case:</p>
-<ul>
-<li><p>Use <a href="https://wiki.archlinux.org/index.php/Powertop">powertop</a>. A great battery monitoring tool. Monitor your wakeups. See if some program is causing a lot of wakeups.</p></li>
-<li><p>Use the tunables tab in powertop. This really helped. Tunes settings like the graphics card staying at 100% even when not in use etc really help.</p></li>
-</ul>
 <h2 id="get-your-graphics-card-straight">Get your graphics card straight</h2>
 <p>This is one of the biggest reasons on Linux for low battery backup. So what happens is, if your laptop has a dedicated graphics card, its going to stay on no matter whether its being used or not, no matter whether you’re reading a PDF or watching a movie. Even if your laptop is using the default fallback graphics most of the time, Intel HD graphics as they’re called in Windows; even then the dedicated graphics card stays on.</p>
 <p>One straightforward way to fix this is to disable the graphics card entirely in the systems settings of your laptop accesible during bootup. That’s not a pretty idea, I can almost see some frowns on this.</p>
