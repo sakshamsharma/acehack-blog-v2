@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script type="text/javascript">
+      var host = "yoursite.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>AceHack - Multiple Git repos in a single directory</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+	<nav class="blog-nav">
+          <a class="blog-nav-item" href="../">Home</a>
+          <!--<a class="blog-nav-item" href="/about.html">About</a>-->
+          <!--<a class="blog-nav-item" href="/contact.html">Contact</a>-->
+          <a class="blog-nav-item" href="../archive.html">Archive</a>
+          <a class="blog-nav-item" href="../contact.html">Almanac</a>
+          <a class="blog-nav-item" href="http://home.iitk.ac.in/~sakshams/resume.pdf">CV</a>
+	</nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+	<h1 class="blog-title">AceHack</h1>
+	<p class="lead blog-description">
+	  The blog of Saksham Sharma
+	</p>
+      </div>
+
+      <div class="row">
+	<div class="col-sm-8 blog-main">
+	  <div class="blog-post">
+  <h2 class="blog-post-title">
+    Multiple Git repos in a single directory
+  </h2>
+  <p class="blog-post-meta">
+    Posted on July  1, 2015
+    
+  </p>
+  <p>There might be a case when you want 2 different Git repositories in a single directory. The most logical situation which comes to mind is keeping 2 repositories in your home-folder, one to perhaps keep your configuration files, and another to keep your custom scripts.</p>
+<p>Seems out-of-bounds right? Not really. It so happens that Git offers a ‘git-dir’ flag to all its commands which tells where the Git files for that repository are stored. Here’s how to put it to some real use.</p>
+<ol style="list-style-type: decimal">
+<li><p>Firstly, do a <code>git init</code> in your home folder. This creates a folder ‘.git’ in your home folder.</p></li>
+<li><p>Go move it to say ‘.rcgit’ with <code>mv .git .rcgit</code>.</p></li>
+<li><p>Do a <code>git init</code> again. Git won’t know there’s another repo there in rcgit so it works fine. Move this new ‘.git’ folder to say ‘.scgit’.</p></li>
+<li><p>Now edit your ‘.zsh_aliases’, ‘.zshrc’ or ‘.bashrc’ to include these 2 lines</p></li>
+</ol>
+<p>Add to aliases:</p>
+<pre><code>alias rcgit='git --git-dir=.rcgit'
+alias scgit='git --git-dir=.scgit'</code></pre>
+<p>As you may have probably guessed by now, you can use the 2 repositories by using ‘rcgit’/‘scgit’ instead of ‘git’ in their parent folder.</p>
+<p>Note that this won’t work if you try these commands from any of their children folders. You’ll have to give the –git-dir flag manually in that case.</p>
+<p>Another thing to keep in mind is that you would have trouble keeping 2 separate ‘.gitignores’. Hopefully the 2 repositories would be able to share a single one.</p>
+<p>For another powerful functionality in Git, look at <a href="http://git-scm.com/docs/git-submodule">submodules</a>. Some other day perhaps.</p>
+</div>
+
+	</div>
+
+	<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	  <div class="sidebar-module sidebar-module-inset">
+	    <h4>About</h4>
+      <!--<img src="/images/me.jpg" style="float: right; margin-left: auto; margin-right: auto; width: 100%;" />-->
+      <p>Sophomore Undergraduate<br></p>
+      <p><i>Indian Institute of Technology Kanpur</i><br>
+      Computer Science and Engineering</p>
+      <p><i>Programmer. Coder. Hacker.</i></p>
+	  </div>
+
+    <div class="sidebar-module">
+      <h4>Old blog</h4>
+      <ol class="list-unstyled">
+        <li><a href="http://os.acehack.org">Old blog</a></li>
+      </ol>
+    </div>
+
+    <!--<div class="sidebar-module">-->
+      <!--<h4>Archives</h4>-->
+      <!--<ol class="list-unstyled">-->
+        <!--<li><a href="#">June 2015</a></li>-->
+      <!--</ol>-->
+    <!--</div>-->
+	  <div class="sidebar-module">
+	    <h4>Elsewhere</h4>
+	    <ol class="list-unstyled">
+        <li>
+          <a href="https://github.com/saksham0808" target="_blank">GitHub</a>
+	      </li>
+	      <li>
+          <a href="https://facebook.com/saksham08" target="_blank">Facebook</a>
+        </li>
+	      <li>
+          <a href="https://instagram.com/saksham0808" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/pub/saksham-sharma/b2/230/204" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="mailto:saksham@acehack.org">saksham@acehack.org</a>
+        </li>
+	    </ol>
+	  </div>
+		<!--<div class="sidebar-module">-->
+			<!--<a href="/atom.xml">Atom</a> - <a href="/rss.xml">RSS</a>-->
+		<!--</div>-->
+	</div>
+
+      </div>
+
+    </div>
+
+    <footer class="blog-footer">
+      <p>
+	Site proudly generated by
+	<a href="http://jaspervdj.be/hakyll">Hakyll</a>
+      </p>
+    </footer>
+
+  </body>
+
+</html>

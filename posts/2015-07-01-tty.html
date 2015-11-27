@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script type="text/javascript">
+      var host = "yoursite.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>AceHack - TTY Tricks in Linux</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+	<nav class="blog-nav">
+          <a class="blog-nav-item" href="../">Home</a>
+          <!--<a class="blog-nav-item" href="/about.html">About</a>-->
+          <!--<a class="blog-nav-item" href="/contact.html">Contact</a>-->
+          <a class="blog-nav-item" href="../archive.html">Archive</a>
+          <a class="blog-nav-item" href="../contact.html">Almanac</a>
+          <a class="blog-nav-item" href="http://home.iitk.ac.in/~sakshams/resume.pdf">CV</a>
+	</nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+	<h1 class="blog-title">AceHack</h1>
+	<p class="lead blog-description">
+	  The blog of Saksham Sharma
+	</p>
+      </div>
+
+      <div class="row">
+	<div class="col-sm-8 blog-main">
+	  <div class="blog-post">
+  <h2 class="blog-post-title">
+    TTY Tricks in Linux
+  </h2>
+  <p class="blog-post-meta">
+    Posted on July  1, 2015
+    
+  </p>
+  <p>I learnt some new things out of curiosity today, regarding working with multiple TTYs. Thought I’d write them down.</p>
+<p>Firstly, multiple TTYs, why would you need them? I for once use them to keep processes running independent of my X session, things like my Wifi Hotspot, things whose output I keep on needing to inspect at times, but don’t want it to hang around inside my X session, incase I close it.</p>
+<p>Also, when experimenting with different Desktop Environments, its actually very useful, because I can have processes running (even Music, thanks MPlayer) and yet close my X session.</p>
+<p>Anyhow, getting down to business:</p>
+<h3 id="chvt">chvt</h3>
+<p>This is something you might need if you want to change your TTY from within a script. Usage goes <code>sudo chvt N</code> where N is the one you want to shift to.</p>
+<h3 id="openvt">openvt</h3>
+<p>A utility to run a command in another TTY from the current terminal. Example: <code>sudo openvt /home/saksham/start_hotspot.sh</code></p>
+<h3 id="using-another-tty-right-inside-the-current-one">Using another TTY right inside the current one</h3>
+<p>Well, the answer happens to be SSH. You can log-in to another TTY from your current TTY with SSH. This might seem of no use, but it is very helpful with remote terminals, and obviously when you want processes in separate TTYs.</p>
+<p>Then, now that your user’s key is set up, you can login with this <code>ssh -n -ttt user@localhost &amp;</code>. This logs your user in the next available TTY, and forks that SSH process to the background.</p>
+<h3 id="using-tmux-or-screen">Using TMUX or Screen</h3>
+<p>Well, you can also have a TMUX or a Screen session running in another TTY, and send over the command you want to run there by sending it via TMUX/Screen.</p>
+<p>This is it, try out having multiple TTYs if you ever get the need. And keep these tips in mind.</p>
+</div>
+
+	</div>
+
+	<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	  <div class="sidebar-module sidebar-module-inset">
+	    <h4>About</h4>
+      <!--<img src="/images/me.jpg" style="float: right; margin-left: auto; margin-right: auto; width: 100%;" />-->
+      <p>Sophomore Undergraduate<br></p>
+      <p><i>Indian Institute of Technology Kanpur</i><br>
+      Computer Science and Engineering</p>
+      <p><i>Programmer. Coder. Hacker.</i></p>
+	  </div>
+
+    <div class="sidebar-module">
+      <h4>Old blog</h4>
+      <ol class="list-unstyled">
+        <li><a href="http://os.acehack.org">Old blog</a></li>
+      </ol>
+    </div>
+
+    <!--<div class="sidebar-module">-->
+      <!--<h4>Archives</h4>-->
+      <!--<ol class="list-unstyled">-->
+        <!--<li><a href="#">June 2015</a></li>-->
+      <!--</ol>-->
+    <!--</div>-->
+	  <div class="sidebar-module">
+	    <h4>Elsewhere</h4>
+	    <ol class="list-unstyled">
+        <li>
+          <a href="https://github.com/saksham0808" target="_blank">GitHub</a>
+	      </li>
+	      <li>
+          <a href="https://facebook.com/saksham08" target="_blank">Facebook</a>
+        </li>
+	      <li>
+          <a href="https://instagram.com/saksham0808" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/pub/saksham-sharma/b2/230/204" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="mailto:saksham@acehack.org">saksham@acehack.org</a>
+        </li>
+	    </ol>
+	  </div>
+		<!--<div class="sidebar-module">-->
+			<!--<a href="/atom.xml">Atom</a> - <a href="/rss.xml">RSS</a>-->
+		<!--</div>-->
+	</div>
+
+      </div>
+
+    </div>
+
+    <footer class="blog-footer">
+      <p>
+	Site proudly generated by
+	<a href="http://jaspervdj.be/hakyll">Hakyll</a>
+      </p>
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script type="text/javascript">
+      var host = "yoursite.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>AceHack - Shifting away from GNOME</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+	<nav class="blog-nav">
+          <a class="blog-nav-item" href="../">Home</a>
+          <!--<a class="blog-nav-item" href="/about.html">About</a>-->
+          <!--<a class="blog-nav-item" href="/contact.html">Contact</a>-->
+          <a class="blog-nav-item" href="../archive.html">Archive</a>
+          <a class="blog-nav-item" href="../contact.html">Almanac</a>
+          <a class="blog-nav-item" href="http://home.iitk.ac.in/~sakshams/resume.pdf">CV</a>
+	</nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+	<h1 class="blog-title">AceHack</h1>
+	<p class="lead blog-description">
+	  The blog of Saksham Sharma
+	</p>
+      </div>
+
+      <div class="row">
+	<div class="col-sm-8 blog-main">
+	  <div class="blog-post">
+  <h2 class="blog-post-title">
+    Shifting away from GNOME
+  </h2>
+  <p class="blog-post-meta">
+    Posted on July  6, 2015
+    
+  </p>
+  <p>Let me get it straight, I love the GNOME project and DE. It’s great looking, has great support, very stable, and includes almost all the basic essestials. It’s great for high-performance PCs. Then why ‘shifting away’ you ask? Here’s why I shifted:</p>
+<ul>
+<li><p>It’s slow. Slow to boot up, and slow to use (it still depends heavily on mouse usage, which is slow). Mind you, I have a i7 4710HQ with 8GB RAM.</p></li>
+<li><p>It’s over-cluttered. I’m sure it looks great because of that, but that’s not a programmer loves.</p></li>
+<li><p>I’m a Linux enthusiast and installing GNOME on my Arch basically defeates the purpose of installing Arch in the first place, which was to use a self-built system.</p></li>
+<li><p>Even keeping a single GNOME package means having to install countless dependencies with it.</p></li>
+</ul>
+<p>I left GNOME about 5-6 months back. Came back to it after 4 months. Left it again 3 months ago, and systematically pushed all its dependencies away from my laptop.</p>
+<h3 id="gnome-shell">GNOME Shell</h3>
+<p>Yes it looks great and all, but it simply isn’t for a pure keyboard user. So I shifted to i3, in my opinion the best Window Manager for programmers atleast. Read more about it here: <a href="http://acehack.org/technical?aname=i3">Hopping over to i3wm</a></p>
+<h3 id="nautilus">Nautilus</h3>
+<p>I still miss it sometimes, but it was exceptionally slow to start on the first launch, and yes, it required quite a few dependencies. I initially used Nemo file manager which is the best looking one I found (of course not better than Nautilus). For people who use i3, or people who don’t want it to manage their desktop because feh or some other package is doing that for them, alias nemo with this <code>nemo --no-desktop</code></p>
+<h3 id="gnome-screenshot">GNOME Screenshot</h3>
+<p>Yes it is awesome. But here’s the alternative I use: <a href="http://screengrab.doomer.org/">screengrab</a>. Many more are listed at <a href="https://wiki.archlinux.org/index.php/Taking_a_screenshot">arch wiki</a></p>
+<h3 id="gnome-terminal">GNOME Terminal</h3>
+<p>This stuck around for the longest time. It allows for easy configuration, and is great overall. But everything has to go. One of the main reasons for removing it was the menu bar at the top. When you keep 6 terminals open on a single screen at a time (courtesy i3wm, yes that’s possible and practical), you want to keep as much space as possible for the Terminal and no space for the extras. So here is the solution, urxvt (or rxvt-unicode). I configured it to look exactly like my GNOME Terminal, and its much faster, lighter, cleaner, and with no 1000 dependencies. If you want, have a look at my .Xresources <a href="https://github.com/saksham0808/my-rc-files/blob/master/.Xresources">here</a> or read about urxvt in my upcoming article here on acehack. I hope this article helps some of you go ahead and take that leap. It’s not <em>that</em> dark and murky world without GNOME, you’ll come to love it too.</p>
+</div>
+
+	</div>
+
+	<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	  <div class="sidebar-module sidebar-module-inset">
+	    <h4>About</h4>
+      <!--<img src="/images/me.jpg" style="float: right; margin-left: auto; margin-right: auto; width: 100%;" />-->
+      <p>Sophomore Undergraduate<br></p>
+      <p><i>Indian Institute of Technology Kanpur</i><br>
+      Computer Science and Engineering</p>
+      <p><i>Programmer. Coder. Hacker.</i></p>
+	  </div>
+
+    <div class="sidebar-module">
+      <h4>Old blog</h4>
+      <ol class="list-unstyled">
+        <li><a href="http://os.acehack.org">Old blog</a></li>
+      </ol>
+    </div>
+
+    <!--<div class="sidebar-module">-->
+      <!--<h4>Archives</h4>-->
+      <!--<ol class="list-unstyled">-->
+        <!--<li><a href="#">June 2015</a></li>-->
+      <!--</ol>-->
+    <!--</div>-->
+	  <div class="sidebar-module">
+	    <h4>Elsewhere</h4>
+	    <ol class="list-unstyled">
+        <li>
+          <a href="https://github.com/saksham0808" target="_blank">GitHub</a>
+	      </li>
+	      <li>
+          <a href="https://facebook.com/saksham08" target="_blank">Facebook</a>
+        </li>
+	      <li>
+          <a href="https://instagram.com/saksham0808" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/pub/saksham-sharma/b2/230/204" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="mailto:saksham@acehack.org">saksham@acehack.org</a>
+        </li>
+	    </ol>
+	  </div>
+		<!--<div class="sidebar-module">-->
+			<!--<a href="/atom.xml">Atom</a> - <a href="/rss.xml">RSS</a>-->
+		<!--</div>-->
+	</div>
+
+      </div>
+
+    </div>
+
+    <footer class="blog-footer">
+      <p>
+	Site proudly generated by
+	<a href="http://jaspervdj.be/hakyll">Hakyll</a>
+      </p>
+    </footer>
+
+  </body>
+
+</html>

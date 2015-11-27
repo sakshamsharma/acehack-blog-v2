@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script type="text/javascript">
+      var host = "yoursite.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>AceHack - Almanac</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-blog.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+	<nav class="blog-nav">
+          <a class="blog-nav-item" href="./">Home</a>
+          <!--<a class="blog-nav-item" href="/about.html">About</a>-->
+          <!--<a class="blog-nav-item" href="/contact.html">Contact</a>-->
+          <a class="blog-nav-item" href="./archive.html">Archive</a>
+          <a class="blog-nav-item" href="./contact.html">Almanac</a>
+          <a class="blog-nav-item" href="http://home.iitk.ac.in/~sakshams/resume.pdf">CV</a>
+	</nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+	<h1 class="blog-title">AceHack</h1>
+	<p class="lead blog-description">
+	  The blog of Saksham Sharma
+	</p>
+      </div>
+
+      <div class="row">
+	<div class="col-sm-8 blog-main">
+	  <p>I would be recording sources I read from, website I visit, tutorials I have followed for, say learning languages etc. Feel free to give this a look and pick whatever interests you :) I hope this section is useful to you.<br />
+ Of note, I got the idea for this section from <a href="http://www.srijanshetty.in">srijanshetty.in</a>, the homepage of a senior from my Department at IITK. Well to be honest, I started making this website on seeing his.</p>
+<h2 id="some-great-linux-packages-and-hacks">Some great Linux packages and hacks</h2>
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Wine">Office 2010 on Linux with Wine</a>: Use Windows just for Office, because LibreOffice etc run out of steam sometime or the other? Read up here about how to install Office 2010 on Linux, and yes, it works perfectly. A tip: Install the packages mentioned here to install office, then use PlayOnLinux to install office finally. Keeps things streamlined.</li>
+<li><a href="http://www.playonlinux.com">PlayOnLinux</a>: A really cool tool to get some Windows softwares working on Linux. Is basically a wrapper for Wine, but contains scripts written by people who got some really cool softwares working, and handles all the dependencies itself. Neat !</li>
+<li><a href="https://cmus.github.io">CMUS</a>: A really nice Music Player for your terminal. There comes a time in almost every Linux lover’s life when he/she wants to move all common tasks to the terminal and/or have Vim key bindings to accompany it. Remember CMUS when you reach there.</li>
+<li><a href="https://wiki.archlinux.org/index.php/Ranger">Ranger</a>: A cool and really fast file manager for the terminal, which really doesn’t feel like terminal. You may think file managers need to stay graphical, but your opinion might change on seeing this. It can do almost all, if not all your tasks faster than the graphical ones. Do check it out.</li>
+<li><a href="https://wiki.archlinux.org/index.php/Rxvt-unicode">rxvt-unicode</a>: A highly customizable terminal emulater. Use it when you finally take the leap and decide not to use any GNOME packages in your installation, for space usage purposes, or for your own mental peace. It can be made to behave exactly like GNOME Terminal, give my .Xresources a look in my-rc-files repo.</li>
+</ul>
+<h2 id="tutorials-and-books">Tutorials and Books</h2>
+<h3 id="linux">Linux</h3>
+<ul>
+<li><a href="http://www.amazon.in/Linux-Bible-Christopher-Negus/dp/111821854X">The Linux Bible</a>: Covers almost all the necessary things you need to know about Linux. I went through this book at a stage when I already knew quite a lot, and still ended up learning a lot more. Of course you can never cover everything about Linux however much you try, but this book strikes a great balance. The only downside (maybe) is that it is based on Fedora/RHEL. You can of course convert this into a good thing by finally getting out to try one of these.</li>
+<li><a href="https://wiki.archlinux.org">The Arch Linux Wiki</a>: This is probably the best source for anyone with basic Linux knowledge to jump onto. Cannot fix something? Cannot get to install something? Broke something? Want to know something? One stop for all the core Linux knowledge. Pro Tip: Try installing Arch atleast once. You would probably learn more about Linux in those few hours than you would learn in a week.</li>
+</ul>
+<h3 id="haskell">Haskell</h3>
+<ul>
+<li><a href="http://www.learnyouahaskell.com">Learn You a Haskell for Great Good</a>: An exceptional tutorial, very friendly and interesting. More tutorials should be like this.</li>
+<li><a href="https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems">99 Haskell Problems</a>: Keep looking at a few exercises here once in a while. Interesting.</li>
+<li><a href="http://dmi3s.blogspot.in/2012/07/how-to-learn-haskell.html">How to learn Haskell</a>: This isn’t a tutorial but a guide about how to learn it, Nice effort.</li>
+<li><a href="https://wiki.haskell.org/Hitchhikers_guide_to_Haskell">Hitchhiker’s Guido to Haskell</a>: I just started reading this, but this one is promising too.</li>
+</ul>
+<p>Of note, just don’t end up confused about what to read from where. I would say go through ‘Learn you a Haskell’ first. Then Hitchhiker would be a good step.</p>
+<h3 id="scala">Scala</h3>
+<ul>
+<li><a href="http://www.amazon.com/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653">Functional Programming with Scala by Paul Chiusano</a>: I found the exercises in this book pretty good for people new to functional programming. I enjoyed the hours I spent thinking of pure functional solutions to simple tasks (this is where I started with Functional Programming)</li>
+<li><a href="https://www.twitter.github.io/scala_school">Twitter Scala School</a>: A bit for the more experienced programmers.</li>
+</ul>
+<h3 id="htmlcssphp">HTML/CSS/PHP</h3>
+<ul>
+<li><a href="http://www.w3schools.com">w3schools</a>: Probably the best tutorials you can get to get started in web development. I made this site in a day while following the PHP tutorial (just cosmetic changes later on). They give you an interactive editor, a great number of good examples, and cover all the concepts really well. You should really give this a swirl, REALLY.</li>
+</ul>
+	</div>
+
+	<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	  <div class="sidebar-module sidebar-module-inset">
+	    <h4>About</h4>
+      <!--<img src="/images/me.jpg" style="float: right; margin-left: auto; margin-right: auto; width: 100%;" />-->
+      <p>Sophomore Undergraduate<br></p>
+      <p><i>Indian Institute of Technology Kanpur</i><br>
+      Computer Science and Engineering</p>
+      <p><i>Programmer. Coder. Hacker.</i></p>
+	  </div>
+
+    <div class="sidebar-module">
+      <h4>Old blog</h4>
+      <ol class="list-unstyled">
+        <li><a href="http://os.acehack.org">Old blog</a></li>
+      </ol>
+    </div>
+
+    <!--<div class="sidebar-module">-->
+      <!--<h4>Archives</h4>-->
+      <!--<ol class="list-unstyled">-->
+        <!--<li><a href="#">June 2015</a></li>-->
+      <!--</ol>-->
+    <!--</div>-->
+	  <div class="sidebar-module">
+	    <h4>Elsewhere</h4>
+	    <ol class="list-unstyled">
+        <li>
+          <a href="https://github.com/saksham0808" target="_blank">GitHub</a>
+	      </li>
+	      <li>
+          <a href="https://facebook.com/saksham08" target="_blank">Facebook</a>
+        </li>
+	      <li>
+          <a href="https://instagram.com/saksham0808" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/pub/saksham-sharma/b2/230/204" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="mailto:saksham@acehack.org">saksham@acehack.org</a>
+        </li>
+	    </ol>
+	  </div>
+		<!--<div class="sidebar-module">-->
+			<!--<a href="/atom.xml">Atom</a> - <a href="/rss.xml">RSS</a>-->
+		<!--</div>-->
+	</div>
+
+      </div>
+
+    </div>
+
+    <footer class="blog-footer">
+      <p>
+	Site proudly generated by
+	<a href="http://jaspervdj.be/hakyll">Hakyll</a>
+      </p>
+    </footer>
+
+  </body>
+
+</html>
