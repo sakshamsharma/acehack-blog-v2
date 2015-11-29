@@ -135,8 +135,8 @@ filetype plugin indent on</code></pre>
 <h3 id="keymappings">Keymappings</h3>
 <p>This is one of the great features of Vim, you can map almost any activity you repeat to a key binding. So here’s a scenario, I use a plugin called NERDcommenter (I cannot live without this). This plugin by default comments the current line when you press <em>leader ci</em> . What I want instead is, to comment the line when I press ‘//’. So here is what I key-in: <code>:map // &lt;leader&gt;ci</code></p>
 <h3 id="the-stuff">The :! stuff</h3>
-<p>One of the coolest things about Vim which modern editors cannot do, it to be able to run terminal commands right inside the editor. So say, you want to compile and run your C++ code from within Vim, and don’t want to exit, I’ll show you how to do that.</p>
-<p>To be continued…</p>
+<p>One of the coolest things about Vim which modern editors cannot do, it to be able to run terminal commands right inside the editor. So say, you want to compile and run your C++ code from within Vim, and don’t want to exit, I’ll show you how to do that. Well modern editors can do this, but the fact that you can integrate these commands and actions into your keybindings, and plugins, and scripts etc etc, that makes this functionality a lot of fun. Try typing this: <code>:!echo &quot;Yo hey! Vim is cool!&quot;</code>. See? Now try <code>:!date</code>. I use this to compile my LaTeX documents on the fly: <code>nmap &lt;F5&gt; :w !pdflatex %&lt;return&gt;</code>. A simple tap on F5, and the editor on the right refreshes the document preview. Neat, ain’t it? The possibilities with this are endless. You can write complete functions and scripts using this, to accomplish common tasks.</p>
+<p>I’ll add more info here as and when I get time.</p>
 </div>
 
         </div>
