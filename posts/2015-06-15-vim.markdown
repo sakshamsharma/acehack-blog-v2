@@ -151,6 +151,9 @@ So here is what I key-in: `:map // <leader>ci`
 
 ### The :! stuff
 
-One of the coolest things about Vim which modern editors cannot do, it to be able to run terminal commands right inside the editor. So say, you want to compile and run your C++ code from within Vim, and don't want to exit, I'll show you how to do that.
+One of the coolest things about Vim which modern editors cannot do, it to be able to run terminal commands right inside the editor. So say, you want to compile and run your C++ code from within Vim, and don't want to exit, I'll show you how to do that. Well modern editors can do this, but the fact that you can integrate these commands and actions into your keybindings, and plugins, and scripts etc etc, that makes this functionality a lot of fun.
+Try typing this: `:!echo "Yo hey! Vim is cool!"`. See? Now try `:!date`.
+I use this to compile my LaTeX documents on the fly: `nmap <F5> :w !pdflatex %<return>`. A simple tap on F5, and the editor on the right refreshes the document preview. Neat, ain't it?
+The possibilities with this are endless. You can write complete functions and scripts using this, to accomplish common tasks.
 
-To be continued...
+I'll add more info here as and when I get time.
