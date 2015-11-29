@@ -2,29 +2,29 @@
 title: Where are we headed
 -------
 
-Of broken roads and trodden paths,
-On these mystical paths they marched.
-What layy ahead, beyond,
-Blissfully unaware.
+Of broken roads and trodden paths,  
+On these mystical paths they marched.  
+What layy ahead, beyond,  
+Blissfully unaware.  
 
-Many roads diverged in the woods,
-Which one to choose, the dilemma stood.
-Bewildered, glanced at others,
-Pilgrims who'd been throughtout.
+Many roads diverged in the woods,  
+Which one to choose, the dilemma stood.  
+Bewildered, glanced at others,  
+Pilgrims who'd been throughtout.  
 
-Myriad counsels, in poured,
-Opening another multitude of doors.
-Follow what your heart says, your core,
-And so went the lore.
+Myriad counsels, in poured,  
+Opening another multitude of doors.  
+Follow what your heart says, your core,  
+And so went the lore.  
 
-Thrust into these woods they were,
-With nothing to go on and nothing to lose.
-Brains to beat the world,
-They marched ahead.
+Thrust into these woods they were,  
+With nothing to go on and nothing to lose.  
+Brains to beat the world,  
+They marched ahead.  
 
-Their odyssey, now we embark on,
-They're the pilgrims and we're the voyagers.
-The roads still diverge in the woods,
-And choices we make, make us.
+Their odyssey, now we embark on,  
+They're the pilgrims and we're the voyagers.  
+The roads still diverge in the woods,  
+And choices we make, make us.  
 
-- Saksham Sharma
+-- Saksham Sharma
