@@ -72,7 +72,7 @@
 <p>The cure to the main trouble I had: Visual Studio. Run Windows inside your Linux. Boot up is faster (as this Windows just has things my Linux doesn’t have, i.e. Visual Studio), and I get workspaces ! (I keep Windows on one workspace, and the rest of the work on another). Oh and works quite fast (although you need a good PC to be able to say this).</p>
 <p>Without further ado, I’ll show you how to get the same experience:</p>
 <h2 id="installing-a-windows-guest-inside-arch-linux-host">Installing a Windows guest inside Arch Linux host</h2>
-<p>You would first have to check whether your processor supports Virtualization. Do it by TODO You need to have Virtualization enabled in your BIOS (it wasn’t in my case). To check this, do a <code>lsmod | grep kvm</code>. You should see a ‘kvm’ and a ‘kvm_intel’ or ‘kvm_amd’ modules there. If not, enable the setting in BIOS, the module should load then (assuming it was already installed, which it is in the default Linux kernel).</p>
+<p>You would first have to check whether your processor supports Virtualization. To check this, run <code>lscpu</code> in your terminal. You should see a line like <code>Virtualization: VT-X</code> or something similar. A missing line means you’re out of luck. If that is so, you should either look at Emulation, for example Wine, or should upgrade your CPU (well I feel this step should be done nonetheless :) ). Now if your PC did support Virtualization, well read ahead. You need to have Virtualization enabled in your BIOS (it wasn’t in my case). To check this, do a <code>lsmod | grep kvm</code>. You should see a ‘kvm’ and a ‘kvm_intel’ or ‘kvm_amd’ modules there. If not, enable the setting in BIOS, the module should load then (assuming it was already installed, which it is in the default Linux kernel).</p>
 <p>Here’s a list of packages you need to install:</p>
 <ol style="list-style-type: decimal">
 <li>virtualbox</li>
@@ -86,7 +86,7 @@
 </ol>
 <p>You might already have qt4, that would provide you with a GUI for VirtualBox too.</p>
 <p>Now to add your user to the necessary groups: <code>sudo gpasswd -a &lt;user&gt; vboxusers</code> Make SURE you logout and login again after this command to make this take effect.</p>
-<p>Now run this: <code>sudo dkms install vboxguest/4.3.28</code> (version as of 6/6/2015).</p>
+<p>Now run this: <code>sudo dkms install vboxguest/4.3.28</code> (version as of 6/6/2015. Change it as per your Virtualbox version installed).</p>
 <p>Also, you have to add the entry “vboxguest” to the array “HOOKS” inside /etc/mkinitcpio.conf</p>
 <p>Now to loading necessary modules and services. Here are the command I run the first time I have to open vbox after a fresh boot:</p>
 <ol style="list-style-type: decimal">
