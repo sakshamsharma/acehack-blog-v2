@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script type="text/javascript">
+      var host = "www.acehack.org";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>AceHack - The story of my blog v3</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+  </head>
+
+  <body>
+
+    <script src="../js/fb.js"></script>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="../">Home</a>
+          <!--<a class="blog-nav-item" href="/about.html">About</a>-->
+          <!--<a class="blog-nav-item" href="/contact.html">Contact</a>-->
+          <a class="blog-nav-item" href="../archive.html">Archive</a>
+          <a class="blog-nav-item" href="../contact.html">Almanac</a>
+          <a class="blog-nav-item" href="http://home.iitk.ac.in/~sakshams/resume.pdf">CV</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">AceHack</h1>
+        <p class="lead blog-description">
+        The blog of Saksham Sharma
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post">
+  <h2 class="blog-post-title">
+    The story of my blog v3
+  </h2>
+  <p class="blog-post-meta">
+    Posted on December  1, 2015
+    
+  </p>
+  <p><em>My third blog</em> Continuing on my <em>change your blog every semester</em> schedule, I finally have my 3rd blog ready in 3 semesters.</p>
+<p>Well, why? I’d simply answer by saying its fun. And besides, I try out something entirely new every time, so its always a good learning experience. Here’s how this blog came to be:</p>
+<ul>
+<li>The old blog didn’t support images directly. There was a workaround; but well it was a <em>workaround</em> nonetheless.</li>
+<li>The free hosting I had been using to host my node.js server wasn’t a particularly fast one (openshift free).</li>
+<li>Having a backend server for a blog seemed like an overkill.</li>
+<li>The immediate factor which made me make the switch: It didn’t allow SSL certificates for custom domain names. So I could not host it on <em>https://acehack.org</em>.</li>
+</ul>
+<p>So I decided I’d finally test out a static site generator. Jekyll happened to be the first to come to mind. Which naturally reminded me of Hakyll, which I had seen just a few days ago.</p>
+<p>Jekyll with Haskell, Why not? Haskell has never ceased to impress me, and I love to stick to packages written in Haskell, trying to gain experience programming in it. XMonad, Taffybar, and now Hakyll.</p>
+<p>So Hakyll is a static site generator, where you configure routes and other settings via a <code>site.hs</code> file. Given the fact that pandoc was written in Haskell, posts in Markdown get converted to HTML pages natively. Lovely!</p>
+<p>Agreed, Hakyll does not have even a fraction of templates etc available for Jekyll, Hakyll basically ‘gives you a <em>clean slate</em> to work on’. That’s more of my type :)</p>
+<p>As for the whole process of making this blog, the majority of the time was spent customizing the CSS from a sample I once saw, and moving the Markdown files from the database of my previous blog. Not much of an effort. There’s a lot more to explore in Hakyll, which I’m still unaware of.</p>
+<p>The next step was of hosting, and Continous Integration. I chose to host it on Github (not much of a choice really, Github is the best choice IMO for this). For CI, I chose CircleCI over TravisCI purely on the basis of a blogger’s opinion that Circle is better than Travis for Hakyll. Being naive with both, I chose Circle. Took some time to figure out, but in the end turned out to be great. I just push to my repository now, and get a built and deployed website in around one and a half minute. Awesome!</p>
+<p>Lastly, https! So Github doesn’t allow SSL certificates for custom domain names either. I went with Cloudflare, a custom nameserver. That doesn’t solve the problem completely, but its almost good enough. So now, the client’s connection to the nameserver is encrypted, but the nameserver’s connection to Github isn’t. Well I feel that’s decent. This took quite some time to get working (I got stuck in endless acehack.org-www.acehack.org redirect loops while trying to make the final domain name the top level one. I finally compromised and let it be www.acehack.org).</p>
+<p>So, here’s how this blog came about. See you 6 months later! :)</p>
+</div>
+
+        </div>
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <!--<img src="/images/me.jpg" style="float: right; margin-left: auto; margin-right: auto; width: 100%;" />-->
+            <p>Sophomore Undergraduate<br></p>
+            <p><i>Indian Institute of Technology Kanpur</i><br>
+            Computer Science and Engineering</p>
+            <p><i>Programmer. Coder. Hacker.</i></p>
+          </div>
+
+          <div class="sidebar-module">
+            <h4>Old blog</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://os.acehack.org">Version 2 (node.js + Openshift)</a></li>
+              <li><a href="http://home.iitk.ac.in/~sakshams">Version 1 (PHP + Apache)</a></li>
+            </ol>
+          </div>
+
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li>
+                <a href="https://github.com/saksham0808" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <a href="https://facebook.com/saksham08" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="https://instagram.com/saksham0808" target="_blank">Instagram</a>
+              </li>
+              <li>
+                <a href="https://in.linkedin.com/pub/saksham-sharma/b2/230/204" target="_blank">LinkedIn</a>
+              </li>
+              <li>
+                <a href="mailto:saksham@acehack.org">saksham@acehack.org</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+      </div>
+
+      <div class="fb-comments" data-href="http://www.acehack.org/posts/2015-12-01-blog.html" data-width="650" data-numposts="20" data-width="100%"></div>
+
+    </div>
+
+    <footer class="blog-footer">
+      <p>
+      Site proudly generated by
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+      </p>
+    </footer>
+
+  </body>
+
+</html>
