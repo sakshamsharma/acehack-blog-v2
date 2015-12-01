@@ -1,10 +1,71 @@
-<ul class="post-list">
-  $for(posts)$
-  <li class="post-list-item">
-      <a href="$url$" class="post-item-link">
-        <p class="titlepost">$title$</p>
-        <p class="datepost">$date$</p>
-      </a>
-  </li>
-  $endfor$
-</ul>
+<div class="tabs">
+  <ul class="tab-links">
+    <li><a href="#tab1">All</a></li>
+    <li class="active"><a href="#tab2">Musings</a></li>
+    <li><a href="#tab3">Technical</a></li>
+    <li><a href="#tab4">Poems</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div id="tab1" class="tab">
+      <ul class="post-list">
+        $for(posts)$
+        <li class="post-list-item">
+          <a href="$url$" class="post-item-link">
+            <p class="titlepost">$title$</p>
+            <p class="datepost">$date$</p>
+          </a>
+        </li>
+        $endfor$
+      </ul>
+    </div>
+
+    <div id="tab2" class="tab active">
+      <ul class="post-list">
+        $for(posts)$
+        $if(musing)$
+        <li class="post-list-item">
+          <a href="$url$" class="post-item-link">
+            <p class="titlepost">$title$</p>
+            <p class="datepost">$date$</p>
+          </a>
+        </li>
+        $endif$
+        $endfor$
+      </ul>
+    </div>
+
+    <div id="tab3" class="tab">
+      <ul class="post-list">
+        $for(posts)$
+        $if(technical)$
+        <li class="post-list-item">
+          <a href="$url$" class="post-item-link">
+            <p class="titlepost">$title$</p>
+            <p class="datepost">$date$</p>
+          </a>
+        </li>
+        $endif$
+        $endfor$
+      </ul>
+    </div>
+
+    <div id="tab4" class="tab">
+      <ul class="post-list">
+        $for(posts)$
+        $if(poem)$
+        <li class="post-list-item">
+          <a href="$url$" class="post-item-link">
+            <p class="titlepost">$title$</p>
+            <p class="datepost">$date$</p>
+          </a>
+        </li>
+        $endif$
+        $endfor$
+      </ul>
+    </div>
+
+  </div>
+  
+</div>

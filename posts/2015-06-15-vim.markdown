@@ -1,5 +1,6 @@
 ---
 title: Kickstart to Vim
+technical: true
 ---
 
 Vim is one of the two widely known text-based Text Editor cum IDEs, the other one being, ahem, Emacs.

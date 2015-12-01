@@ -75,6 +75,6 @@ feedConfiguration = FeedConfiguration
   { feedTitle = "acehack.org"
   , feedDescription = "Personal blog of Saksham Sharma"
   , feedAuthorName = "Saksham Sharma"
-  , feedAuthorEmail = "saksham@acehack.org"
+  , feedAuthorEmail = "saksham0808@gmail.com"
   , feedRoot = "http://acehack.org"
   }

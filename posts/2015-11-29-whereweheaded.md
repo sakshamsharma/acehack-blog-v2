@@ -1,5 +1,7 @@
 -------
-title: Where are we headed
+title: Where we're headed
+musing: true
+poem: true
 -------
 
 Of broken roads and trodden paths,  
