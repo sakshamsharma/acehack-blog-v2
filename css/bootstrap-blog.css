@@ -142,7 +142,9 @@ h6, .h6 {
 }
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 42px;
+  font-style: oblique;
+  font-family: serif;
 }
 .blog-post-meta {
   margin-bottom: 20px;

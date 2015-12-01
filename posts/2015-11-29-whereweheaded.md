@@ -2,6 +2,7 @@
 title: Where we're headed
 musing: true
 poem: true
+summary: The roads still diverge in the woods..
 -------
 
 Of broken roads and trodden paths,  

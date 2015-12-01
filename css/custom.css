@@ -2,6 +2,18 @@
   font-size:x-large;
 }
 
+.blog-post-summary {
+  color: #444;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+.summpost {
+  margin: 0;
+  color: #444;
+}
+
 .post-list {
   display: list-item;
   list-style-type: none;
@@ -42,6 +54,8 @@
 .datepost {
   font-size: smaller;
   margin-bottom: 0;
+  margin-top: 0;
+  color: #666;
 }
 
 p {
