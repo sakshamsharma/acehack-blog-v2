@@ -18,13 +18,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-blog.css">
     <link rel="stylesheet" type="text/css" href="./css/custom.css">
+    <link rel="stylesheet" type="text/css" href="./css/tabs.css">
 
     <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+
+    <script src="./js/fb.js"></script>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/tabs.js"></script>
+   
   </head>
 
   <body>
-
-    <script src="./js/fb.js"></script>
 
     <div class="blog-masthead">
       <div class="container">
@@ -50,121 +54,363 @@
 
       <div class="row">
         <div class="col-sm-8 blog-main">
-          <ul class="post-list">
+          <div class="tabs">
+  <ul class="tab-links">
+    <li><a href="#tab1">All</a></li>
+    <li class="active"><a href="#tab2">Musings</a></li>
+    <li><a href="#tab3">Technical</a></li>
+    <li><a href="#tab4">Poems</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div id="tab1" class="tab">
+      <ul class="post-list">
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-12-01-blog.html" class="post-item-link">
+            <p class="titlepost">The story of my blog v3</p>
+            <p class="datepost">December  1, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-11-29-whereweheaded.html" class="post-item-link">
+            <p class="titlepost">Where we're headed</p>
+            <p class="datepost">November 29, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-11-25-power.html" class="post-item-link">
+            <p class="titlepost">NVIDIA with Bumblebee and improving Battery Backup</p>
+            <p class="datepost">November 25, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-11-11-memory.html" class="post-item-link">
+            <p class="titlepost">The Memory</p>
+            <p class="datepost">November 11, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-10-12-ambition.html" class="post-item-link">
+            <p class="titlepost">Ambition and choices</p>
+            <p class="datepost">October 12, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-09-19-i3.html" class="post-item-link">
+            <p class="titlepost">i3 to XMonad - How and why</p>
+            <p class="datepost">September 19, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-09-06-bootloader.html" class="post-item-link">
+            <p class="titlepost">Bootloaders: Basics</p>
+            <p class="datepost">September  6, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-11-cse.html" class="post-item-link">
+            <p class="titlepost">About what CSE is and isn't</p>
+            <p class="datepost">July 11, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-06-leavegnome.html" class="post-item-link">
+            <p class="titlepost">Shifting away from GNOME</p>
+            <p class="datepost">July  6, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-04-vimsudo.html" class="post-item-link">
+            <p class="titlepost">How to save a file with root-priviledges in a normal Vim session</p>
+            <p class="datepost">July  4, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-03-i3wm.html" class="post-item-link">
+            <p class="titlepost">Hopping over to i3wm</p>
+            <p class="datepost">July  3, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-01-voyage.html" class="post-item-link">
+            <p class="titlepost">My Voyage through the seas of programming</p>
+            <p class="datepost">July  1, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-01-tty.html" class="post-item-link">
+            <p class="titlepost">TTY Tricks in Linux</p>
+            <p class="datepost">July  1, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-01-multigit.html" class="post-item-link">
+            <p class="titlepost">Multiple Git repos in a single directory</p>
+            <p class="datepost">July  1, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-06-25-vbox.html" class="post-item-link">
+            <p class="titlepost">Running Windows inside Arch (never leaving Arch again)</p>
+            <p class="datepost">June 25, 2015</p>
+          </a>
+        </li>
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-06-15-vim.html" class="post-item-link">
+            <p class="titlepost">Kickstart to Vim</p>
+            <p class="datepost">June 15, 2015</p>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div id="tab2" class="tab active">
+      <ul class="post-list">
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-12-01-blog.html" class="post-item-link">
+            <p class="titlepost">The story of my blog v3</p>
+            <p class="datepost">December  1, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-11-29-whereweheaded.html" class="post-item-link">
+            <p class="titlepost">Where we're headed</p>
+            <p class="datepost">November 29, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-11-11-memory.html" class="post-item-link">
+            <p class="titlepost">The Memory</p>
+            <p class="datepost">November 11, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-10-12-ambition.html" class="post-item-link">
+            <p class="titlepost">Ambition and choices</p>
+            <p class="datepost">October 12, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-11-cse.html" class="post-item-link">
+            <p class="titlepost">About what CSE is and isn't</p>
+            <p class="datepost">July 11, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-01-voyage.html" class="post-item-link">
+            <p class="titlepost">My Voyage through the seas of programming</p>
+            <p class="datepost">July  1, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div id="tab3" class="tab">
+      <ul class="post-list">
+        
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-11-25-power.html" class="post-item-link">
+            <p class="titlepost">NVIDIA with Bumblebee and improving Battery Backup</p>
+            <p class="datepost">November 25, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-09-06-bootloader.html" class="post-item-link">
+            <p class="titlepost">Bootloaders: Basics</p>
+            <p class="datepost">September  6, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-06-leavegnome.html" class="post-item-link">
+            <p class="titlepost">Shifting away from GNOME</p>
+            <p class="datepost">July  6, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-04-vimsudo.html" class="post-item-link">
+            <p class="titlepost">How to save a file with root-priviledges in a normal Vim session</p>
+            <p class="datepost">July  4, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-03-i3wm.html" class="post-item-link">
+            <p class="titlepost">Hopping over to i3wm</p>
+            <p class="datepost">July  3, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-07-01-tty.html" class="post-item-link">
+            <p class="titlepost">TTY Tricks in Linux</p>
+            <p class="datepost">July  1, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-06-25-vbox.html" class="post-item-link">
+            <p class="titlepost">Running Windows inside Arch (never leaving Arch again)</p>
+            <p class="datepost">June 25, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-06-15-vim.html" class="post-item-link">
+            <p class="titlepost">Kickstart to Vim</p>
+            <p class="datepost">June 15, 2015</p>
+          </a>
+        </li>
+        
+        
+      </ul>
+    </div>
+
+    <div id="tab4" class="tab">
+      <ul class="post-list">
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-11-29-whereweheaded.html" class="post-item-link">
+            <p class="titlepost">Where we're headed</p>
+            <p class="datepost">November 29, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="post-list-item">
+          <a href="./posts/2015-11-11-memory.html" class="post-item-link">
+            <p class="titlepost">The Memory</p>
+            <p class="datepost">November 11, 2015</p>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+  </div>
   
-  <li class="post-list-item">
-      <a href="./posts/2015-12-01-blog.html" class="post-item-link">
-        <p class="titlepost">The story of my blog v3</p>
-        <p class="datepost">December  1, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-11-29-whereweheaded.html" class="post-item-link">
-        <p class="titlepost">Where are we headed</p>
-        <p class="datepost">November 29, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-11-25-power.html" class="post-item-link">
-        <p class="titlepost">NVIDIA with Bumblebee and improving Battery Backup</p>
-        <p class="datepost">November 25, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-11-11-memory.html" class="post-item-link">
-        <p class="titlepost">The Memory</p>
-        <p class="datepost">November 11, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-10-12-ambition.html" class="post-item-link">
-        <p class="titlepost">Ambition and choices</p>
-        <p class="datepost">October 12, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-09-19-i3.html" class="post-item-link">
-        <p class="titlepost">i3 to XMonad - How and why</p>
-        <p class="datepost">September 19, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-09-06-bootloader.html" class="post-item-link">
-        <p class="titlepost">Bootloaders: Basics</p>
-        <p class="datepost">September  6, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-07-11-cse.html" class="post-item-link">
-        <p class="titlepost">About what CSE is and isn't</p>
-        <p class="datepost">July 11, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-07-06-leavegnome.html" class="post-item-link">
-        <p class="titlepost">Shifting away from GNOME</p>
-        <p class="datepost">July  6, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-07-04-vimsudo.html" class="post-item-link">
-        <p class="titlepost">How to save a file with root-priviledges in a normal Vim session</p>
-        <p class="datepost">July  4, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-07-03-i3wm.html" class="post-item-link">
-        <p class="titlepost">Hopping over to i3wm</p>
-        <p class="datepost">July  3, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-07-01-voyage.html" class="post-item-link">
-        <p class="titlepost">My Voyage through the seas of programming</p>
-        <p class="datepost">July  1, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-07-01-tty.html" class="post-item-link">
-        <p class="titlepost">TTY Tricks in Linux</p>
-        <p class="datepost">July  1, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-07-01-multigit.html" class="post-item-link">
-        <p class="titlepost">Multiple Git repos in a single directory</p>
-        <p class="datepost">July  1, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-06-25-vbox.html" class="post-item-link">
-        <p class="titlepost">Running Windows inside Arch (never leaving Arch again)</p>
-        <p class="datepost">June 25, 2015</p>
-      </a>
-  </li>
-  
-  <li class="post-list-item">
-      <a href="./posts/2015-06-15-vim.html" class="post-item-link">
-        <p class="titlepost">Kickstart to Vim</p>
-        <p class="datepost">June 15, 2015</p>
-      </a>
-  </li>
-  
-</ul>
+</div>
 
 
         </div>
