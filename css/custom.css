@@ -14,6 +14,10 @@
   color: #444;
 }
 
+.displayed {
+    margin: 10px;
+}
+
 .post-list {
   display: list-item;
   list-style-type: none;

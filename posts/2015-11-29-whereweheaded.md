@@ -7,13 +7,13 @@ summary: The roads still diverge in the woods..
 
 Of broken roads and trodden paths,  
 On these mystical paths they marched.  
-What layy ahead, beyond,  
+What lay ahead, beyond,  
 Blissfully unaware.  
 
 Many roads diverged in the woods,  
 Which one to choose, the dilemma stood.  
 Bewildered, glanced at others,  
-Pilgrims who'd been throughtout.  
+Pilgrims who'd been throught it all.  
 
 Myriad counsels, in poured,  
 Opening another multitude of doors.  
