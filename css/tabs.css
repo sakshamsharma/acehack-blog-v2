@@ -13,15 +13,15 @@
 }
 
 .tab-links li {
-    margin:0px 5px;
+    margin:0px 2px;
     float:left;
     list-style:none;
 }
 
 .tab-links a {
-    padding:9px 15px;
+    padding:9px 12px;
     display:inline-block;
-    border-radius:3px 3px 0px 0px;
+    border-radius:2px 2px 0px 0px;
     font-size:16px;
     background:#c7dde5;
     font-weight:600;
