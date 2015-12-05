@@ -78,7 +78,7 @@
 <h2 id="powertop">Powertop</h2>
 <p><a href="https://wiki.archlinux.org/index.php/Powertop">Powertop</a> is a great nifty tool to monitor your power usage. But importantly here, you can actually use it to fix your battery life. * sudo pacman -S powertop * sudo emerge –ask powertop * sudo apt-get install powertop</p>
 <p>Fire it up (it requires sudo), have a look at the current stats. See if some program is causing more wakeups than it should (more the number of wakeups, more the power consumtion). Look at your CPU idle stats. If they’re too high, you should perhaps consider setting up a <a href="https://wiki.archlinux.org/index.php/CPU_frequency_scaling">CPU governor</a>.</p>
-<p>The interesting part, look at the ‘Device Stats’ tab. Here you’d see what hardware is consuming battery. You’d see things like Bluetooth, and your graphics card. I personally disable my Bluetooth completely using this script at startup <a href="https://github.com/saksham0808/my-configs/blob/master/.myscripts/blueoff" class="uri">https://github.com/saksham0808/my-configs/blob/master/.myscripts/blueoff</a>. It might not work for you, but you get the point. About the Graphics card still being at 100%, that’s because of one last trick up Powertop’s sleeve.</p>
+<p>The interesting part, look at the ‘Device Stats’ tab. Here you’d see what hardware is consuming battery. You’d see things like Bluetooth, and your graphics card. I personally disable my Bluetooth completely using this script at startup <a href="https://github.com/sakshamsharma/my-configs/blob/master/.myscripts/blueoff" class="uri">https://github.com/sakshamsharma/my-configs/blob/master/.myscripts/blueoff</a>. It might not work for you, but you get the point. About the Graphics card still being at 100%, that’s because of one last trick up Powertop’s sleeve.</p>
 <p>Shift to the tunables tab, and mark every ‘bad’ tunable to ‘good’ unless you have a problem with anyone of those. I’ve never hard one, but then everyone uses their laptop differently. Once you’ve done this, you should finally see your graphics card at 0% in the Device Stats, unless you’re using it.</p>
 <p>I often like to open powertop and see the battery discharge rate in Watts. Try doing it a few times to see how your usage affects the consumption.</p>
 <p>Concluding this section, you can use <code>sudo powertop --auto-tune</code> to make all the tunables to good. I made a small systemd service to run this command at every boot by enabling it.</p>
@@ -110,7 +110,8 @@
             <h4>Elsewhere</h4>
             <ol class="list-unstyled">
               <li>
-                <a href="https://github.com/saksham0808" target="_blank">GitHub</a>
+                <a href="https://github.com/sakshamsharma" target="_blank">GitHub</a>
+                <small>note the changed URL</small>
               </li>
               <li>
                 <a href="https://facebook.com/saksham08" target="_blank">Facebook</a>
