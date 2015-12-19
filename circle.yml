@@ -27,7 +27,7 @@ deployment:
   production:
     branch: hakyll
     commands:
-      - git config --global user.email circleci@circleci
+      - git config --global user.email saksham@acehack.org
       - git config --global user.name CircleCI
       - cd _site/ && git status
       - cp CNAME _site/
