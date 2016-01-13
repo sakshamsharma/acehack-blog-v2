@@ -31,6 +31,7 @@ deployment:
       - git config --global user.name CircleCI
       - cd _site/ && git status
       - cp CNAME _site/
+      - cp README.md _site/
       - cp _config.yml _site/
       - cd _site/ && git add --all
       - cd _site/ && git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
