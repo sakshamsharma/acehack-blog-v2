@@ -2,7 +2,7 @@
 title: About
 ---
 
-<img class="img-rounded displayed" width="40%" align="right" style="margin=10px;" src="/images/me.jpg"></img>
+<img class="img-rounded displayed" width="40%" align="right" style="margin=10px;" src="/images/me2.jpg"></img>
 
 I'm Saksham Sharma as is obvious. A sophomore armed with a Laptop; Tall, Lanky and over-energetic punjabi guy, that's me.
 

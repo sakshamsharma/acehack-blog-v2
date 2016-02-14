@@ -3,3 +3,6 @@ _site
 dist/
 .stack-work/
 *~
+cabal.sandbox.config
+.cabal-sandbox/
+.cabal-sandbox/*
