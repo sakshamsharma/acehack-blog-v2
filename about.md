@@ -12,6 +12,6 @@ Now there's much more to me rather than just studying, I love to code, play badm
 
 I love coding in any form, and Linux, anything about it. You *should* look at [my Github account](https://github.com/sakshamsharma). Also, I'll mention, the same way I've mentioned in my old blogs, that I started actual coding on coming to college, just about an year and a half back. (Well if you consider coding as writing loops and not knowing about arrays, then I'm afraid my claim is wrong). I did have to spend a huge, *huge* lot of time programming to get to this level. [My journey](https://www.acehack.org/posts/2015-07-01-voyage.html) has been a fine one.
 
-As for writing, I used to love reading literature when I was young. Writing took a back seat after a stage, but doesn't mean I don't love to scribble.
+As for writing, I used to love reading literature when I was a kid. Writing took a back seat after a stage, but doesn't mean I don't love to scribble.
 
 Go ahead and give some stuff here a read. Come back for more :)
